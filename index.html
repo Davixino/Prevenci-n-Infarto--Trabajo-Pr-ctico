@@ -1,0 +1,381 @@
+
+<style>
+h1 {
+  color: black;
+  background-color: #DBF9FC;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+  border: 5px #DBF9FC;
+  width: 60%;
+  height: 20px;
+  text-align: center;
+  margin-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  vertical-align: middle;
+ }
+ 
+ h2 {
+  color: black;
+  background-color: #DBF9FC;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.0em;
+  border: 5px #DBF9FC;
+  width: 10%;
+  height: 20px;
+  text-align: center;
+  margin-left: 46%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+
+ }
+
+ 
+ h3 {
+  color: black;
+  background-color: #DBF9FC;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.0em;
+  border: 5px #DBF9FC;
+  width: 10%;
+  height: 20px;
+  text-align: center;
+  margin-left: 46%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+
+ }
+
+ h4 {
+  color: black;
+  background-color: #DBF9FC;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.0em;
+  border: 5px #DBF9FC;
+  width: 10%;
+  height: 20px;
+  text-align: center;
+  margin-left: 46%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+
+ }
+ h5 {
+  color: black;
+  background-color: #DBF9FC;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.0em;
+  border: 5px #DBF9FC;
+  width: 12%;
+  height: 20px;
+  text-align: center;
+  margin-left: 46%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+
+ }
+
+ h6 {
+  color: black;
+  background-color: #DBF9FC;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.0em;
+  border: 5px #DBF9FC;
+  width: 15%;
+  height: 20px;
+  text-align: center;
+  margin-left: 44%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+
+ }
+
+
+</style>
+<h1>Análisis de Prevención Infarto</h1>
+
+<b>Nombre:</b> Ronald Jimenez <br>
+<b>URL:</b> <a
+href="https://js-hhd53e.stackblitz.io">https://js-hhd53e.stackblitz.io</a><br>
+
+<b>GitHub:</b> <a
+href="https://github.com/Davixino">https://github.com/Davixino</a><br>
+
+<b>Tableau:</b> <a
+href="https://public.tableau.com/app/profile/davixino/viz/Libro1_16555729976350/Hoja2?publish=yes">https://public.tableau.com/app/profile/davixino/viz/Libro1_16555729976350/Hoja2?publish=yes</a><br>
+
+<b>Dataset:</b> <a
+href="https://www.outcomesumassmed.org/GRACE/login.aspx">https://www.outcomesumassmed.org/GRACE/login.aspx</a><br>
+
+<b>Google Colab:</b> <a
+href="https://colab.research.google.com/drive/1DJ539Uf-rQVrHk8EAG4LQtBBLPIxY3df?usp=sharing">https://colab.research.google.com/drive/1DJ539Uf-rQVrHk8EAG4LQtBBLPIxY3df?usp=sharing</a><br>
+
+<h2>Introducción</h2>
+<div>Dentro del ámbito de la salud, la empresa ¨Registro Global de Eventos Coronarios Agudos¨ conocido como  GRACE, está diseñada para extraer datos de los resultados hospitalarios de cada paciente. Los resultados son exportados con casi 250 hospitales de 30 países. Grace cuenta con 102.00 inscritos de los pacientes. Los resultados obtenidos o datos de los pacientes se obtienen a través de una aplicación y esa aplicación cuenta con sistemas de registros médicos electrónicos que se utilizan en el tratamiento clínico diario de los pacientes. Se ha obtenido la mejor puntuación de riesgo por Excelencia Clínica. 
+<p> </p> 
+
+
+
+<h3>Propuesta de valor</h3>
+Me ha interesado trabajar el tema de la salud dentro de ingeniería porque trabajé una tesis de grado en electrónica y telecomunicaciones que me llevó al estudio de máquinas electrónicas del corazón, siguiendo esto encontré un estudio anticipado para predecir mortalidad intrahospitalaria en el síndrome coronario agudo en la ciudad de Buenos Aires  <a
+href="https://www.redalyc.org/journal/3053/305363202010/html/">https://www.redalyc.org/journal/3053/305363202010/html/</a><br> que presentó registros de los enfermos con síndrome coronario agudo, de los cuales han sido seleccionado para analizar el riesgo de los enfermos y obtener la posible intervención de enfermedades, por ejemplo, si se tiene síntomas complicadas podría llegar a la muerte o lo contrario infarto miocardio. El Síndrome coronario agudo es una afección que reducen el flujo de sangre al músculo cardiaco y el músculo cardiaco puede dañarse. 
+
+<p> </p> 
+
+Fueron incluidos registros no sesgado para garantizar la ética de la base de datos, aunque existen pocos registros que no contienen información. Este trabajo esta enfocado a realizar la predicción de la muerte basado de los síntomas, pero también permite implementar elementos visuales para comprender la tendencia, los valores atipicos y los patrones de los datos. Se podría decir que existen distintas causas que provocan muerte o infarto de miocardio. De este modo, para tener la conclusión o respuestas satisfactorias, se prevé realizar un análisis de prevención de infarto aplicando algunas herramientas necesarias para estimar en cual grupo está teniendo más riesgos acumulado de la muerte e infarto de miocardio.
+
+Grace dispone una página de base de datos de manera privada, lo cual es
+necesario tener las credenciales para extraer dataset. El dataset se encuentra
+a través de esta página <a
+href="https://www.outcomesumassmed.org/GRACE/login.aspx">https://www.outcomesumassmed.org/GRACE/login.aspx</a><br>
+
+<p> </p> 
+<h3>Motivación</h3>
+<p> </p> 
+Para el desarrollo investigativo de mi trabajo me motivó, el hecho de brindar un mejor sistema de apoyo al personal médico de las áreas del corazón, ya que estas enfermedades son más criticas en tiempos y es bueno tener mayor información de procesos sobre pacientes y sobre la enfermedad, en esta medida los pacientes enfermos con síndrome coronario agudo fueron atendidos en hospitales durante en los 6 meses. Se ha revisado datos históricos de los pacientes seleccionados que brindar un soporte de información, con el cual se podria gestionar y trabajar de mejor manera la información.
+
+<p> </p> 
+
+<h5>Objetivos</h5>
+
+<div>
+
+  El objetivo principal es presentar los resultados de forma visual despues de haber hecho el análisis y estudio del prestente dataseet (pre-limpiado por medio de la materia de mineria de datos), cuyos resultados visuales nos permitan adentrarnos en el conocimiento que nos ofrece este dataseet y asi generar y propomer toma de decisiones para mejorar el sistema médico de los doctores para gestionar la información de los pacientes con enfermedades cardiacas.
+  
+  Por lo cual este análisis pretende responder a las siguientes preguntas:
+  
+  <ul>
+  <li>¿De que edad son las personas que más sufren infartos cardíacos?</li>
+  <li>¿De que género son las personas que sufren más infartos cardíacos?</li>
+  <li>¿Cuales son los síntomas que están relacionados mayormente al infarto cardiaco ?</li>
+  <li>¿En que área profesional trabajan las personas que poseen mayores indice de infartos cardiacos?</li>
+  </ul>
+  
+  </div>
+
+
+<h6>Análisis/Metodología</h6>
+
+Para el desarrollo por medio de las metodologias en mi proyecto, se podría decir que existen distintas causas que provocan muerte o infarto de miocardio. De este modo, para tener la conclusión o respuestas satisfactorias, se prevé realizar un análisis de prevención de infarto aplicando algunas herramientas necesarias para estimar para estimar en cual grupo está teniendo más riesgos acumulado de la muerte e infarto de miocardio.
+<p> </p>
+
+<b>Audiencia:</b> Este proceso de análisis técnico va dirigido principalmente a todos los directivos de centros médicos, doctores, centros hospitalarios, hospitales públicos y privados con una gran acogida de pacientes de enfermedades cardiacas, para la captación de pacientes por la eficiencia de los procesos médicos en este tipo de enfermedades potencialmente graves, este análisis puede ser implementado en para cualquier zona del pais o inclusive en sucursales extranjeras. 
+
+ 
+<p> </p> 
+<h6>Características de Dataset seleccionado</h6>
+Para la selección de dataset debo tomar en cuenta que: 
+<p> </p> 
+En los pacientes enfermos con síndrome coronario agudo fueron atendidos en hospitales durante un proceso de 6 meses. Se ha revisado datos históricos de los pacientes seleccionados. Los pacientes enfermos del registro fueron seleccionados en 94 hospitales de 14 países. También fueron incluidos enfermos con edad mayor de 18 que presentación síntomas del síndrome coronario dentro del tratamiento clínico.
+<p> </p> 
+Fueron incluidos registros no sesgado para garantizar la ética de la base de datos, aunque existen pocos registros que no contienen información. Se prevé analizar los elementos visuales de la muerte basado de los síntomas.
+
+<ul>
+<li><b>Informacion:</b>  Dataset de información para el análisis de enfermedades cardiacas y mortalidad intrahospitalaria en el síndrome coronario agudo </li>
+<li><b> Tamaño: </b> 12 columnas, 43400 filas </li>
+<p> </p> 
+<p> </p> 
+
+
+<li><b>ID                         :</b> Nímero de ficha médica y identificador de paciente en el historial medico</li>
+<li><b>Genero                     :</b> Sexo del paciente Masculino/Femenino</li>
+<li><b>Edad                      :</b> Edad del paciente</li>
+<li><b>Flag_hipertension           :</b>Alerta de problemas de hipertensión que a tenido el paciente </li>
+<li><b>Flag_problem_cardiaco       :</b>Alerta de problema cardiaco que ha tenido el paciente </li>
+<li><b>Estados_civil              :</b>Estado civil del paciente (Casado/soltero/Viudo/divorciado) </li>
+<li><b>Tipo_trabajo               :</b>Área del trabajo del paciente </li>
+<li><b>Zona_residencia            :</b> Lugar de residencia del paciente </li>
+<li><b>Promedio_nivel_glucosa    :</b> Valor numérico del último control del nivel de glucosa del paciente </li>
+<li><b>IMC                       :</b> Indice de masa corporal en el paciente </li>
+<li><b>Flag_fumador               :</b> Alerta del paciente que es fumador </li>
+<li><b>Ataque_cardiaco             :</b>Alerta de si el paciente ha tenido algun ataque cardiaco</li>
+
+</ul>
+
+<div>Una vez analizadas las variables su tipo, formato entre otros aspectos se procedió en una materia pasada a realizar un proceso de limpieza y análisis en la que se llamó Mineria de datos concluyendo con un proceso KDD y el análisis de datos en Google Colab el cual sito a continuación el trabajo realizado en la plataforma Google Colab.</div>
+</ul>
+<a
+href="https://colab.research.google.com/drive/1DJ539Uf-rQVrHk8EAG4LQtBBLPIxY3df?usp=sharing">https://colab.research.google.com/drive/1DJ539Uf-rQVrHk8EAG4LQtBBLPIxY3df?usp=sharing</a><br>
+
+</ul>
+
+<p> </p> 
+
+Del siguiente notebook, podemos concluir lo siguiente:
+<p> </p> 
+
+<h6>Conclusiones</h6>
+<ul>
+
+
+  <p> </p> 
+-Dentro de la parte de mineria de datos y limpieza de mi dataseet, puedo determinar que mis instancias o valores dentro de ciertas caracteristicas fueron transformados, otros limpiados o borrados y otros sobrepuestos de acuerdo a ciertos procesos de mineria de datos  y asi mismo logrando que ciertas caracteristicas con todos los datos correctos se mantengan intactas pero las variables han sido reducidas. 
+<p> </p> 
+SE OBSERVA QUE: 
+<p> </p> 
+<li>Una comparación de dichas variables con df original y df encoded
+<li>Dichas variables discriminan el target (Ataque_cardiacos) ya que tienen una tendencia en su distribucion:
+<li>Estado civil casado (mayor % de Casos de Ataque cardiacos)
+<li>Los clientes con edad mayor 67 años represetan mayor riesgo de enfermedades cardiacas
+<li>Con respecto a la glucosa (los de categoria 3 y 4 representan el mayor riesgo a tener ataques cardiacos).
+  <p> </p> 
+Tambien identifiqué variables son variables target, estas considero yo indispensables para extraer patrones de correlación, para determinar patrones entre otros aspectos técnicos que nos brinde información de relevancia sobre los pacientes con antecedentes medicos para los analices de enfermedades cardiacas.
+
+</li>
+<p> </p> 
+<div>Seguidamente, de haber realizado el análisis de exploratorio de datos, he  procedido a realizar un análisis más detallado para encontrar patrones válidos de identificación y analisis de datos con su respectiva presentación gráfica por medio de TABLEAU .</div>
+
+<p> </p> 
+<div class='tableauPlaceholder' id='viz1656095636126' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;Libro1_16555729976350&#47;Hoja1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Libro1_16555729976350&#47;Hoja1' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;Libro1_16555729976350&#47;Hoja1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656095636126');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+</ul>
+
+<p> </p> 
+
+
+<div class='tableauPlaceholder' id='viz1656095747307' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;Libro1_16555729976350&#47;Hoja2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Libro1_16555729976350&#47;Hoja2' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Li&#47;Libro1_16555729976350&#47;Hoja2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656095747307');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+</ul>
+<p> </p> 
+<li><b>Conclusion Tableau:</b>
+
+  Dentro de mi desarrollo y uso de Tableau he podido trabajar y desarrollar 4 interfaces que me permitirán analizar y generar mejores opiniones profesionales frente a mi data, de las cuales presento 2 que considero las mas importantes para este trabajo:
+  
+  <p> </p> 
+  
+  <ul>
+  <li><b>- 1. :</b> He generado una gráfica de identificación de las edades de los pacientes con mayores ataques cardiacos sucitados, los cuales me permitirán descifrar en qué edades suceden con mayor frecuencia los ataques cardiacos. </li>
+  </ul>
+  <p> </p> 
+  
+  <ul>
+  <li><b>- 2. :</b> Asi mismo generé una gráfica (hoja uno en la misma) con los valores de agrupación de edad para saber de entre todos los datos que pacientes acuden más al hospital con determinadas edades. </li>
+  </ul>
+  <p> </p>
+  
+ 
+  <ul>
+  <li><b>- 3. :</b> Y por último presentó una gráfica de barras,(hoja dos en la misma)con 2 targets uno valorando agrupaciones de ataques cardiacos en condiciones de edades, asi mismo cuenta la categoria de ataque cardiaco: El color celeste proporciona que no sufrió ataque cardiaco y el color azul marino proporciona que sufrió ataque cardiaco </li>
+  </ul>
+  <p> </p> 
+  
+  Con estos datos y información puedo obtener la cantidad de pacientes totales y los que han sufrido ataques cardiacos antes de ser ingresados al sistema, igualmente la cantidad de pacientes agrupados por edades y factores cardiacos.
+  
+  El uso de Tableau ha sido una de las mejores experiencias y programa que he manejado para este tipo de procesos de visualización de datos ya que me permite manejar con interacciones inclusive dentro de la plataforma. 
+
+
+
+<p> 
+
+
+
+</p> 
+  
+<iframe title="Prevención cardiaco" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0c33d328-8262-49d2-8529-901bbc844421&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&pageName=ReportSection0b8c2a46e13e74dadca9" frameborder="0" allowFullScreen="true"></iframe>
+
+<p> 
+
+
+
+</p> 
+  
+
+
+<iframe title="Prevención cardiaco" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0c33d328-8262-49d2-8529-901bbc844421&autoAuth=true&ctid=02674ef9-5c2c-47d0-b2bc-595a784dda00&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D&pageName=ReportSectionb4db5eb6efea16d4042a" frameborder="0" allowFullScreen="true"></iframe>
+
+
+</p> 
+
+  
+</ul>
+<li><b
+  
+ 
+  >Conclusion Power Bi:</b>
+
+  Dentro de mi desarrollo y uso de power bi eh podido trabajar y desarrollar 4 interfaces que me permitiran analizar y generar mejores opiniones profesionales frente a mi data:
+  
+  <p> </p> 
+
+  <ul>
+  <li><b>- 1. :</b> He generado una grafica de barras horizontales que me permite identificar cuantos pacientes viven en la zona urbana o rural, de los cuales han sufrido ataques cardiacos. (Prevención infarto por paciente 1) </li>
+  </ul>
+  <p> </p> 
+  
+  <ul>
+  <li><b>- 2. :</b> Asi mismo generé una grafica de barras horizontales el género de los pacientes y su correlación con ataques cardiacos. (Prevención infarto por paciente 1) </li>
+  </ul>
+  <p> </p>
+  
+  <ul>
+  <li><b>- 3. :</b> Asi mismo creé una gráfica de lineas para determinar el tipo de trabajo de los pacientes en determinados edades, de los cuales sufrieron ataques cardiacos. (Categoría de Tipo de trabajo: 0 - Nunca trabajo, 1 - Cuidar niños, 2 - En gobierno, 3 - Empresa Privada, 4- Emprendedor ) - (Prevención infarto por paciente 1) </li>
+  </ul>
+  <p> </p> 
+  
+  <ul>
+  <li><b>- 4. :</b> Y por ultimo presentó un gráfico de barras, que determina el número de estado civil, de los cuales han sufrido ataques cardiacos. (Categoria de Estado civil: 0 - Soltero, 1 - Casado) - (Prevención infarto por paciente 1) . </li>
+  </ul>
+  <p> </p> 
+
+
+  
+  <ul>
+  <li><b>- 5. :</b> He generado una gráfica de barras horizontales que me permite identificar cuantos pacientes que han tenido antecedentes de glucosa (riesgo) han sufrido ataques cardiacos. </li>
+  </ul>
+  <p> </p> 
+  
+  <ul>
+  <li><b>- 6. :</b> Asi mismo generé una gráfica de barras horizontales con los valores de IMC de masa corporal de los pacientes y su correlación con ataques cardiacos. </li>
+  </ul>
+  <p> </p>
+  
+  <ul>
+  <li><b>- 7. :</b> Asi mismo creé un conjunto de barras verticales de datos, que me permite obtener información de cuales y cuantos pacientes sufrieron enfermedades cardiacas cuando tenian problemas de hipertensión. </li>
+  </ul>
+  <p> </p> 
+  
+  <ul>
+  <li><b>- 8. :</b> Y por ultimo presentó un gráfico de barras, que determina el porcentaje y número exacto de pacientes que han tenido la reincidencia cardiaca luego de haber sufrido problemas cardiacos con antelación . </li>
+  </ul>
+  <p> </p> 
+  
+  El uso de Power bI lo he enfocado en obtener estos datos y información netamente de procesos o historias clinicas de pacientes y sus adversidades de salud anteriores y la relación con enfermedades cardiacas. En este enlace 
+  <br>
+   <a
+  href="https://1drv.ms/u/s!Ai0f_AE0FQzCqFKhM6LAn7Ai8ec3?e=TidQdZ">https://1drv.ms/u/s!Ai0f_AE0FQzCqFKhM6LAn7Ai8ec3?e=TidQdZ</a><br> se encuentra el archivo de power Bi de los gráficos, debido que la licencia está a punto de caducar. 
+
+
+  <p> </p> 
+
+
+</div>
+<h6>Referencias</h6>
+<div>
+<ul>
+B.O.E. (2014). BOLETÍN OFICIAL DEL ESTADO. BOE.
+ https://www.boe.es/eli/es/o/2014/10/27/int2223/dof/spa/pdf  
+</ul>
+<ul>
+Peris, G. P. (2022). Grupo Alega: Ante el aumento de los accidentes de tráfico es importante contar con abogados especialistas. Diario Siglo XXI. https://www.diariosigloxxi.com/texto-diario/mostrar/3578291/grupo-alega-ante-aumento-accidentes-trafico-importante-contar-abogados-especialistas
+</ul>
+<ul>
+Vanguardia, L. (2022, 6 abril). Estas son las personas que morirán en la carretera esta Semana Santa, según el «big data». La Vanguardia. https://www.lavanguardia.com/motor/actualidad/20220405/8178404/dgt-predice-big-data-cuantas-personas-moriran-accidente-trafico-semana-santa.html
+</ul>
+<ul>
+Fern\U00E1Ndez, M. (2022, 27 abril). La DGT podría cometer un error con sus paneles: causarían más accidentes, según un informe. El EspaÃ±ol. https://www.elespanol.com/reportajes/20220427/dgt-podria-cometer-paneles-causarian-accidentes-informe/668183290_0.html
+</ul>
+
+<ul>
+Fern\U00E1Ndez, M. (2022, 27 abril). La DGT podría cometer un error con sus paneles: causarían más accidentes, según un informe. El EspaÃ±ol. https://www.elespanol.com/reportajes/20220427/dgt-podria-cometer-paneles-causarian-accidentes-informe/668183290_0.html
+</ul>
